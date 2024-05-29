@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas</title>
+    <link rel="stylesheet" href="perguntaStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="theme-sound" src="../sounds/tema.mp3"></audio>
+    <audio id="click-sound" src="../sounds/clique.mp3"></audio>
+    <audio id="fail-sound" src="/sounds/fail.mp3"></audio>
+    <audio id="medium-sound" src="/sounds/razoavel.mp3"></audio>
+    <audio id="win-sound" src="/sounds/win.mp3"></audio>
+    
+    <nav class="nav-bar" >
+       
+        <div class="logo">
+            <img src="../img/logo.png" width="50px" alt="Logo">
+            <div id="cronometrojs" class="cronometro">00:00</div>
+        </div>       
+        <ul class="nv-br">
+             
+            <li><a href="perguntas.html">Jogos</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+        
+    </nav>
+    <header>
+        <div class="container" id="pergunta1">
+            
+
+            <div class="begin">
+                <div class="pergunta01">
+                    <h1>Normalmente, quantos litros de sangue uma pessoa tem? Em média, quantos são retirados numa
+                        doação de sangue?</h1>
+                    <div class="opcoes">
+                        <input type="radio" id="a" name="opcoes" value="a">
+                        <label for="a">a) Tem entre 2 a 4 litros. São retirados 450 mililitros</label><br>
+                        <input type="radio" id="b" name="opcoes" value="b">
+                        <label for="b">b) Tem entre 4 a 6 litros. São retirados 450 mililitros</label><br>
+                        <input type="radio" id="c" name="opcoes" value="c">
+                        <label for="c">c) Tem 10 litros. São retirados 2 litros</label><br>
+                        <input type="radio" id="d" name="opcoes" value="d">
+                        <label for="d">d) Tem 7 litros. São retirados 1,5 litros</label><br>
+                        <input type="radio" id="e" name="opcoes" value="e">
+                        <label for="e">e) Tem 0,5 litros. São retirados 0,5 litros</label><br>
+                    </div>
+                </div>
+                <div class="buttons" id="botao">
+                    <a href="#" class="btn">Próxima</a>
+                   
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container" id="tempoover" style="display: none;">
+            <div class="begin">
+                <div class="pergunta01">
+                    <h1 >Tempo acabou<h1>
+                        <div  id="total"></div>
+                           
+                            <div class="buttons"  id="btns">
+                                <a href="../index.html" class="btn" style="padding-bottom:10px ;">Inicio</a>
+                                <a href="./perguntas.html" class="btn" style="padding-bottom: 10px; ;">Tentar Novamente</a>
+                            </div>
+                            
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container" id="pergunta2" style="display: none;">
+
+            <div class="begin">
+                <div class="pergunta01">
+                    <h1>De quem é a famosa frase “Penso, logo existo” ?</h1>
+                    <div class="opcoes">
+                        <input type="radio" id="a1" name="opcoes1" value="a">
+                        <label for="a1">a) Platão</label><br>
+                        <input type="radio" id="b1" name="opcoes1" value="b">
+                        <label for="b1">b) Galileu Galilei</label><br>
+                        <input type="radio" id="c1" name="opcoes1" value="c">
+                        <label for="c1">c) Descartes</label><br>
+                        <input type="radio" id="d1" name="opcoes1" value="d">
+                        <label for="d1">d) Sócrates</label><br>
+                        <input type="radio" id="e1" name="opcoes1" value="e">
+                        <label for="e1">e) Francis Bacon</label><br>
+                    </div>
+                </div>
+                <div class="buttons" id="botao2">
+                    <a href="#" class="btn">Próxima</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="pergunta3" style="display: none;">
+
+            <div class="begin">
+                <div class="pergunta01">
+                    <h1>De onde é a invenção do chuveiro elétrico?</h1>
+                    <div class="opcoes">
+                        <input type="radio" id="a2" name="opcoes2" value="a">
+                        <label for="a2">a) França</label><br>
+                        <input type="radio" id="b2" name="opcoes2" value="b">
+                        <label for="b2">b) Inglaterra</label><br>
+                        <input type="radio" id="c2" name="opcoes2" value="c">
+                        <label for="c2">c) Brasil</label><br>
+                        <input type="radio" id="d2" name="opcoes2" value="d">
+                        <label for="d2">d) Austrália</label><br>
+                        <input type="radio" id="e2" name="opcoes2" value="e">
+                        <label for="e2">e) Itália</label><br>
+                    </div>
+                </div>
+                <div class="buttons" id="botao3">
+                    <a href="#" class="btn">Próxima</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="pergunta4" style="display: none;">
+
+            <div class="begin">
+                <div class="pergunta01">
+                    <h1>Quais o menor e o maior país do mundo?</h1>
+                    <div class="opcoes">
+                        <input type="radio" id="a3" name="opcoes3" value="a">
+                        <label for="a3">a) Vaticano e Rússia</label><br>
+                        <input type="radio" id="b3" name="opcoes3" value="b">
+                        <label for="b3">b) Nauru e China</label><br>
+                        <input type="radio" id="c3" name="opcoes3" value="c">
+                        <label for="c3">c) Mônaco e Canadá</label><br>
+                        <input type="radio" id="d3" name="opcoes3" value="d">
+                        <label for="d3">d) Malta e Estados Unidos</label><br>
+                        <input type="radio" id="e3" name="opcoes3" value="e">
+                        <label for="e3">e) São Marino e Índia</label><br>
+                    </div>
+                </div>
+                <div class="buttons" id="botao4">
+                    <a href="#" class="btn">Próxima</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="pergunta5" style="display: none;">
+
+            <div class="begin">
+                <div class="pergunta01">
+                    <h1>Qual o nome do presidente do Brasil que ficou conhecido como Jango?</h1>
+                    <div class="opcoes">
+                        <input type="radio" id="a4" name="opcoes3" value="a">
+                        <label for="a4">a) Jânio Quadros</label><br>
+                        <input type="radio" id="b4" name="opcoes3" value="b">
+                        <label for="b4">b) Jacinto Anjos</label><br>
+                        <input type="radio" id="c4" name="opcoes3" value="c">
+                        <label for="c4">c) Getúlio Vargas</label><br>
+                        <input type="radio" id="d4" name="opcoes3" value="d">
+                        <label for="d4">d) João Figueiredo</label><br>
+                        <input type="radio" id="e4" name="opcoes3" value="e">
+                        <label for="e4">e) João Goulart</label><br>
+                    </div>
+                </div>
+                <div class="buttons" id="botao5">
+                    <a href="#" class="btn">Próxima</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="pergunta6" style="display: none;">
+
+            <div class="begin">
+                <div class="pergunta01">
+                    <h1>Qual o grupo em que todas as palavras foram escritas corretamente?</h1>
+                    <div class="opcoes">
+                        <input type="radio" id="a5" name="opcoes3" value="a">
+                        <label for="a5">a) Asterístico, beneficiente, meteorologia, entertido</label><br>
+                        <input type="radio" id="b5" name="opcoes3" value="b">
+                        <label for="b5">b) Asterisco, beneficente, meteorologia, entretido</label><br>
+                        <input type="radio" id="c5" name="opcoes3" value="c">
+                        <label for="c5">c) Asterisco, beneficente, metereologia, entretido</label><br>
+                        <input type="radio" id="d5" name="opcoes3" value="d">
+                        <label for="d5">d) Asterístico, beneficiente, metereologia, entretido</label><br>
+                        <input type="radio" id="e5" name="opcoes3" value="e">
+                        <label for="e5">e) Asterisco, beneficiente, metereologia, entretido</label><br>
+                    </div>
+                </div>
+                <div class="buttons" id="botao6">
+                    <a href="#" class="btn">Próxima</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="pergunta7" style="display: none;">
+
+            <div class="begin">
+                <div class="pergunta01">
+                    <h1>Qual o livro mais vendido no mundo a seguir à Bíblia?</h1>
+                    <div class="opcoes">
+                        <input type="radio" id="a6" name="opcoes3" value="a">
+                        <label for="a6">a) O Senhor dos Anéis</label><br>
+                        <input type="radio" id="b6" name="opcoes3" value="b">
+                        <label for="b6">b) Dom Quixote</label><br>
+                        <input type="radio" id="c6" name="opcoes3" value="c">
+                        <label for="c6">c) O Pequeno Príncipe</label><br>
+                        <input type="radio" id="d6" name="opcoes3" value="d">
+                        <label for="d6">d) Ela, a Feiticeira</label><br>
+                        <input type="radio" id="e6" name="opcoes3" value="e">
+                        <label for="e6">e) Um Conto de Duas Cidades</label><br>
+                    </div>
+                </div>
+                <div class="buttons" id="botao7">
+                    <a href="#" class="btn">Próxima</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="pergunta8" style="display: none;">
+
+            <div class="begin">
+                <div class="pergunta01">
+                    <h1>Quantas casas decimais tem o número pi?</h1>
+                    <div class="opcoes">
+                        <input type="radio" id="a7" name="opcoes3" value="a">
+                        <label for="a7">a) Duas</label><br>
+                        <input type="radio" id="b7" name="opcoes3" value="b">
+                        <label for="b7">b) Centenas</label><br>
+                        <input type="radio" id="c7" name="opcoes3" value="c">
+                        <label for="c7">c) Infinitas</label><br>
+                        <input type="radio" id="d7" name="opcoes3" value="d">
+                        <label for="d7">d) Vinte</label><br>
+                        <input type="radio" id="e7" name="opcoes3" value="e">
+                        <label for="e7">e) Milhares</label><br>
+                    </div>
+                </div>
+                <div class="buttons" id="botao8">
+                    <a href="#" class="btn">Próxima</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="pergunta9" style="display: none;">
+
+            <div class="begin">
+                <div class="pergunta01">
+                    <h1>Atualmente, quantos elementos químicos a tabela periódica possui?</h1>
+                    <div class="opcoes">
+                        <input type="radio" id="a8" name="opcoes3" value="a">
+                        <label for="a8">a) 113</label><br>
+                        <input type="radio" id="b8" name="opcoes3" value="b">
+                        <label for="b8">b) 109</label><br>
+                        <input type="radio" id="c8" name="opcoes3" value="c">
+                        <label for="c8">c) 108</label><br>
+                        <input type="radio" id="d8" name="opcoes3" value="d">
+                        <label for="d8">d) 118</label><br>
+                        <input type="radio" id="e8" name="opcoes3" value="e">
+                        <label for="e8">e) 92</label><br>
+                    </div>
+                </div>
+                <div class="buttons" id="botao9">
+                    <a href="#" class="btn">Próxima</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="pergunta10" style="display: none;">
+
+            <div class="begin">
+                <div class="pergunta01">
+                    <h1>Quais os países que têm a maior e a menor expectativa de vida do mundo?</h1>
+                    <div class="opcoes">
+                        <input type="radio" id="a9" name="opcoes3" value="a">
+                        <label for="a9">a) Japão e Serra Leoa</label><br>
+                        <input type="radio" id="b9" name="opcoes3" value="b">
+                        <label for="b9">b) Austrália e Afeganistão</label><br>
+                        <input type="radio" id="c9" name="opcoes3" value="c">
+                        <label for="c9">c) Itália e Chade</label><br>
+                        <input type="radio" id="d9" name="opcoes3" value="d">
+                        <label for="d9">d) Brasil e Congo</label><br>
+                        <input type="radio" id="e9" name="opcoes3" value="e">
+                        <label for="e9">e) Estados Unidos e Angola</label><br>
+                    </div>
+                </div>
+                <div class="buttons" id="botao10">
+                    <a href="#" class="btn">Próxima</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="resultado" style="display: none;">
+            <div class="begin">
+                <div class="pergunta01">
+                    <h1 >Seu resultado<h1>
+                        <div id="total"></div>
+                            <span class="points" id="point"></span>
+                            <h1 id="media"></h1>                       
+                            <div class="buttons"  id="btns">
+
+                                <a href="../index.html" class="btn">Inicio</a>
+                            </div>
+
+                </div>
+
+            </div>
+        </div>
+       
+
+
+
+
+
+    </header>
+    <script src="perguntasScript.js"></script>
+</body>
+
+</html>

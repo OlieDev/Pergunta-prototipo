@@ -1,0 +1,122 @@
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	height: 100%;
+	
+	
+}
+body{
+	background-image: url("img/fundo.jpg");	
+    background-size: cover;
+}
+
+.alerta{ 
+	margin-top: 10px;
+	box-shadow: 1px 1px 10px inset;
+	color: #000000;
+	font-size: 15px;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-style: normal;
+
+}
+
+.nav-bar{
+	width: 100%;
+    height: 50px;   
+    display: flex;    
+	justify-content: end;	
+}
+
+.nv-br{
+	display: flex;
+	width: 20%;
+	
+}
+
+.nv-br li{
+	list-style: none;
+    margin: 0 5px;
+}
+
+.nv-br li a{
+    text-decoration: none;
+    color: #940f0f;
+	font-size: 25px;
+	font-family: "Poetsen One", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	
+	
+  
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	margin: 0 10px;
+	height: 100%;
+	width: 65%;		
+}
+
+.container{	
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	height: 600px;
+	width: 900px;
+	background-color: rgba(255, 255, 255, 0.507);
+	border-radius: 10px;
+
+}
+
+header{
+	margin-top: 60px;
+	width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container h1{
+	font-family: "Poetsen One", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    color: #940f0f;    
+}
+.begin img{
+	padding-left: 40px;
+	
+}
+
+.begin{
+	display: flex;
+	flex-direction: column;
+}
+
+.buttons{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.buttons a {
+	
+	text-decoration: none;
+	width: 200px;
+    height: 50px;
+    background-color: #940f0f;
+    color: white; 
+    border-radius: 10px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 20px;
+	padding-top: 10px;
+}
